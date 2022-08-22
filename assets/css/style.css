@@ -8,8 +8,8 @@
 }
 
 body {
-    height: 3000px;
     width: 100%;
+    height: 3000px;
     font-family: 'Mulish', sans-serif;
     /* background: linear-gradient(#008FB0, #01ABA3, #e3402f, #ddacaf, #EAC86E); */
     background: linear-gradient(blue,indigo,violet, red,orange,yellow,green);
@@ -17,33 +17,28 @@ body {
 
 h1 {
     width: 50%;
-    color: coral;
+    color: rgb(110, 25, 25);
     font-family: 'Barriecito', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 150%;
-    padding-left: 5%;
-    margin: 2% 0 0;
-    text-align: left; 
+    padding: 2% 2% 0;
+    margin: 5% 5% 0;
 }
 
 
 #header {
     width: 100%;
     height: 170px;
-    background-color: #fff;
-    position: fixed;
     margin: 1rem 0;
 }
 
 .main-nav {
+    width: 100%;
     position: fixed;
-    opacity: 0.8;
+    z-index: 1;
     display:  block;
-    justify-content: space-between;
-    align-items: center;
-    color: #daf8e3;
-    background: #005582;
+    color: rgb(110, 25, 25);
 }
 
 .nav-links {
@@ -54,8 +49,8 @@ h1 {
 .nav-links a {
     margin-inline: 0 1rem;
     text-decoration: none;
+    font-weight: bolder;
     float: right;
-    padding-bottom: 2%;
 }
 
 #hero-image {
@@ -63,15 +58,47 @@ h1 {
     height: 600px;
     background: url(../images/pexels-karolina-grabowska-4040603.jpg) center center no-repeat;
     background-size: cover;
-    overflow: visible;
 }
 
-h2 {
+#intro {
+    width: 100%;
+}
+
+#intro h2 {
+    margin: 2rem;
     color: #fff;
     /* font-family: 'Mulish', sans-serif; */
     font-size: large;
     font-weight: lighter;
     text-align: center;
-    padding: 5%;
-    margin: 2%;
+}
+
+#types {
+    width: 100%;
+}
+
+#types h2 {
+    background-color: #8CA990;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 5% ; 
+}
+    
+#gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery img {
+    /* display: flex;
+    flex-direction: column; */
+    margin: 5%;
+    border: 1px solid #fff;
+    border-radius: 5%;    
 }
