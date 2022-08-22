@@ -1,13 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Mulish:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     border: none;
+    color: inherit;
+}
+
+body {
+    height: 3000px;
+    width: 100%;
+    font-family: 'Mulish', sans-serif;
+    /* background: linear-gradient(#008FB0, #01ABA3, #e3402f, #ddacaf, #EAC86E); */
+    background: linear-gradient(blue,indigo,violet, red,orange,yellow,green);
+}
+
+h1 {
+    width: 50%;
+    color: coral;
+    font-family: 'Barriecito', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 150%;
+    padding-left: 5%;
+    margin: 2% 0 0;
+    text-align: left; 
+}
+
+
+#header {
+    width: 100%;
+    height: 170px;
+    background-color: #fff;
+    position: fixed;
+    margin: 1rem 0;
+}
+
+.main-nav {
+    position: fixed;
+    opacity: 0.8;
+    display:  block;
+    justify-content: space-between;
+    align-items: center;
+    color: #daf8e3;
+    background: #005582;
+}
+
+.nav-links {
+    list-style: none;
+    flex-direction: row-reverse;
+}
+
+.nav-links a {
+    margin-inline: 0 1rem;
+    text-decoration: none;
+    float: right;
+    padding-bottom: 2%;
 }
 
 #hero-image {
-    height: 100%;
     width: 100%;
-    background-image: url("pexels-karolina-grabowska-4040592.jpeg");
-    background-color: blueviolet;
- 
+    height: 600px;
+    background: url(../images/pexels-karolina-grabowska-4040603.jpg) center center no-repeat;
+    background-size: cover;
+    overflow: visible;
+}
+
+h2 {
+    color: #fff;
+    /* font-family: 'Mulish', sans-serif; */
+    font-size: large;
+    font-weight: lighter;
+    text-align: center;
+    padding: 5%;
+    margin: 2%;
 }
